@@ -1,0 +1,44 @@
+{
+    "##": "This file is a template. Fill the blanks and add or remove fields as necessary.",
+    "version": "8.8.0_1",
+    "description": "curl is used in command lines or scripts to transfer data.",
+    "homepage": "https://curl.se/",
+    "license": "MIT",
+    "notes": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://curl.se/windows/dl-8.8.0_1/curl-8.8.0_1-win64-mingw.zip",
+            "hash": "55b01829dbc774ac201bb0cacebe453857707b10913937c49e3e8f48f0998703"
+        },
+        "32bit": {
+            "url": "https://curl.se/windows/dl-8.8.0_1/curl-8.8.0_1-win32-mingw.zip",
+            "hash": "35889d15c5074f77f1f391133e416570f09afe9afa0f77cd5f427994750bccc5"
+        },
+        "arm64": {
+            "url": "https://curl.se/windows/dl-8.8.0_1/curl-8.8.0_1-win64a-mingw.zip",
+            "hash": "991e2b0c74900216ae38c354690bd87f675f0b342acfa624563f4cc535885da0"
+        }
+    },
+    "bin": "bin\\curl.exe",
+    "checkver": {
+        "url": "https://curl.se/windows/",
+        "regex": "Build<\\/b>:\\s+([\\d._]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://curl.se/windows/dl-$version/curl-$version-win64-mingw.zip"
+            },
+            "32bit": {
+                "url": "https://curl.se/windows/dl-$version/curl-$version-win32-mingw.zip"
+            },
+            "arm64": {
+                "url": "https://curl.se/windows/dl-$version/curl-$version-win64a-mingw.zip"
+            }
+        },
+        "hash": {
+            "url": "",
+            "regex": ""
+        }
+    }
+}
