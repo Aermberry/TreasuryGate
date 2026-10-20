@@ -8,5 +8,8 @@
     "hash": "a162cf5338eb63a41eaa0b3d0717ce8b445feca7b42caa1f466efe7ac15180ff",
     "extract_dir": "snitch-backend",
     "bin": "snitch-backend.exe",
-    "checkver": "github"
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/aixisstudio/Snitch/releases/download/v$version/snitch-backend-windows-latest.tar.gz"
+    }
 }
