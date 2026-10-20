@@ -16,6 +16,11 @@ Describe 'Snitch manifest' {
         $releaseUrlMatch.Groups['version'].Value | Should -Be $manifest.version
     }
 
+    It 'provides an autoupdate URL for versioned Windows backend releases' {
+        $manifest.autoupdate.url | Should -Be 'https://github.com/aixisstudio/Snitch/releases/download/v$version/snitch-backend-windows-latest.tar.gz'
+        $manifest.autoupdate.url.Replace('$version', $manifest.version) | Should -Be $manifest.url
+    }
+
     It 'has a SHA-256 hash' {
         $manifest.hash | Should -Match '^[a-fA-F0-9]{64}$'
     }
