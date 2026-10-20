@@ -1,0 +1,12 @@
+{
+    "version": "1.0.5",
+    "description": "Real-time network traffic visualizer with process attribution and anomaly detection",
+    "homepage": "https://github.com/aixisstudio/Snitch",
+    "license": "AGPL-3.0-only",
+    "notes": "Requires Npcap and an elevated terminal to capture traffic. This package installs the backend only.",
+    "url": "https://github.com/aixisstudio/Snitch/releases/download/v1.0.5/snitch-backend-windows-latest.tar.gz",
+    "hash": "a162cf5338eb63a41eaa0b3d0717ce8b445feca7b42caa1f466efe7ac15180ff",
+    "extract_dir": "snitch-backend",
+    "bin": "snitch-backend.exe",
+    "checkver": "github"
+}
