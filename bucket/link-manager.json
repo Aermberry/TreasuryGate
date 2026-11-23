@@ -1,23 +1,35 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Windows junction/symlink manager: wizard-style GUI for humans, stable JSON CLI for agents. Move heavy directories off C: with a junction pointing back, safely and reversibly.",
     "homepage": "https://github.com/Aermberry/link-manager",
     "license": "MIT",
     "notes": "CLI: link-manager help. GUI: link-manager-gui. Docs: https://github.com/Aermberry/link-manager#readme",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Aermberry/link-manager/releases/download/v1.0.0/link-manager-v1.0.0-win-x64.exe#/link-manager.exe",
-            "hash": "sha256:5ca2a2b59c61420131aa3976c981e18f58a3673a576efa37fc0d958e3ae97c5a"
+            "url": [
+                "https://github.com/Aermberry/link-manager/releases/download/v1.0.1/link-manager-v1.0.1-win-x64.exe#/link-manager.exe",
+                "https://github.com/Aermberry/link-manager/releases/download/v1.0.1/link-manager-gui-v1.0.1-win-x64.exe#/link-manager-gui.exe"
+            ],
+            "hash": [
+                "sha256:395db1cd5eb1450e497a4c3c5b033b094283e0b7a4deacc10b8a3f58af7182a9",
+                "sha256:be38531551bae48c2324e8f0bf4b3310d882abea1705b9bac2590e1fc4a5539b"
+            ]
         }
     },
-    "bin": "link-manager.exe",
+    "bin": [
+        "link-manager.exe",
+        "link-manager-gui.exe"
+    ],
     "checkver": {
         "github": "https://github.com/Aermberry/link-manager/releases/latest"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Aermberry/link-manager/releases/download/v$version/link-manager-v$version-win-x64.exe#/link-manager.exe"
+                "url": [
+                    "https://github.com/Aermberry/link-manager/releases/download/v$version/link-manager-v$version-win-x64.exe#/link-manager.exe",
+                    "https://github.com/Aermberry/link-manager/releases/download/v$version/link-manager-gui-v$version-win-x64.exe#/link-manager-gui.exe"
+                ]
             }
         }
     }
