@@ -18,7 +18,10 @@
     },
     "bin": [
         "link-manager.exe",
-        "link-manager-gui.exe"
+        [
+            "LinkManager.Gui.exe",
+            "link-manager-gui.exe"
+        ]
     ],
     "checkver": {
         "github": "https://github.com/Aermberry/link-manager/releases/latest"
