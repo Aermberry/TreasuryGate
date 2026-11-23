@@ -1,5 +1,5 @@
 {
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Windows junction/symlink manager: wizard-style GUI for humans, stable JSON CLI for agents. Move heavy directories off C: with a junction pointing back, safely and reversibly.",
     "homepage": "https://github.com/Aermberry/link-manager",
     "license": "MIT",
@@ -7,12 +7,12 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Aermberry/link-manager/releases/download/v1.0.3/link-manager-v1.0.3-win-x64.exe#/link-manager.exe",
-                "https://github.com/Aermberry/link-manager/releases/download/v1.0.3/link-manager-gui-v1.0.3-win-x64.zip"
+                "https://github.com/Aermberry/link-manager/releases/download/v1.0.4/link-manager-v1.0.4-win-x64.exe#/link-manager.exe",
+                "https://github.com/Aermberry/link-manager/releases/download/v1.0.4/link-manager-gui-v1.0.4-win-x64.zip"
             ],
             "hash": [
-                "sha256:b65de82f65cfe1d4bdfc78db06c6b9dc1d0b6414b7022691b02ced23211e02da",
-                "sha256:9705c2d3f943e0b5e69ecb4c1dfeda450df1663d6e2ad2107084f1a8ff2fafbe"
+                "sha256:c80bb72d9eafc7da0f280bab49f3322f6eec96e30c067eec18ac9848c349f0ec",
+                "sha256:ef15512ebe2606d1ae122e44f07d5868079b3bde1bc4dba5325ca1d4f2a760e4"
             ]
         }
     },
