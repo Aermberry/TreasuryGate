@@ -1,39 +1,39 @@
 {
-    "version": "1.0.6",
-    "description": "Windows junction/symlink manager: wizard-style GUI for humans, stable JSON CLI for agents. Move heavy directories off C: with a junction pointing back, safely and reversibly.",
-    "homepage": "https://github.com/Aermberry/link-manager",
-    "license": "MIT",
-    "notes": "CLI: link-manager help. GUI: link-manager-gui. Docs: https://github.com/Aermberry/link-manager#readme",
-    "architecture": {
-        "64bit": {
-            "url": [
-                "https://github.com/Aermberry/link-manager/releases/download/v1.0.6/link-manager-v1.0.6-win-x64.exe#/link-manager.exe",
-                "https://github.com/Aermberry/link-manager/releases/download/v1.0.6/link-manager-gui-v1.0.6-win-x64.zip"
-            ],
-            "hash": [
-                "sha256:6dd9f828e827c02985a044cf842b5b737c3321cd619d829c7f2a10a3fe76ae1c",
-                "sha256:1a2a9fde5785791dbea1153d61e945697481663eae3afe17f24cab0bfbfeba56"
-            ]
-        }
-    },
-    "bin": [
-        "link-manager.exe",
-        [
-            "LinkManager.Gui.exe",
-            "link-manager-gui.exe"
-        ]
-    ],
-    "checkver": {
-        "github": "https://github.com/Aermberry/link-manager/releases/latest"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": [
-                    "https://github.com/Aermberry/link-manager/releases/download/v$version/link-manager-v$version-win-x64.exe#/link-manager.exe",
-                    "https://github.com/Aermberry/link-manager/releases/download/v$version/link-manager-gui-v$version-win-x64.zip"
-                ]
-            }
-        }
+  "version": "1.0.7",
+  "description": "Windows junction/symlink manager: wizard-style GUI for humans, stable JSON CLI for agents. Move heavy directories off C: with a junction pointing back, safely and reversibly.",
+  "homepage": "https://github.com/Aermberry/link-manager",
+  "license": "MIT",
+  "notes": "CLI: link-manager help. GUI: link-manager-gui. Docs: https://github.com/Aermberry/link-manager#readme",
+  "architecture": {
+    "64bit": {
+      "url": [
+        "https://github.com/Aermberry/link-manager/releases/download/v1.0.7/link-manager-v1.0.7-win-x64.exe#/link-manager.exe",
+        "https://github.com/Aermberry/link-manager/releases/download/v1.0.7/link-manager-gui-v1.0.7-win-x64.zip"
+      ],
+      "hash": [
+        "sha256:e946fca9f92f80c736e9ea8463cedb5517efc6d766c53a1bce8c7ea0427af13c",
+        "sha256:fbb4fd26f0261b3d1f56a73d3c1a0c21b19201999615beacebc7286a471bc962"
+      ]
     }
+  },
+  "bin": [
+    "link-manager.exe",
+    [
+      "LinkManager.Gui.exe",
+      "link-manager-gui.exe"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/Aermberry/link-manager/releases/latest"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": [
+          "https://github.com/Aermberry/link-manager/releases/download/v$version/link-manager-v$version-win-x64.exe#/link-manager.exe",
+          "https://github.com/Aermberry/link-manager/releases/download/v$version/link-manager-gui-v$version-win-x64.zip"
+        ]
+      }
+    }
+  }
 }
