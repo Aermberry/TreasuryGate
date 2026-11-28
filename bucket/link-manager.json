@@ -24,7 +24,7 @@
     ]
   ],
   "checkver": {
-    "github": "https://github.com/Aermberry/link-manager/releases/latest"
+    "github": "https://github.com/Aermberry/link-manager"
   },
   "autoupdate": {
     "architecture": {
