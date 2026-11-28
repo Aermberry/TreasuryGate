@@ -1,0 +1,35 @@
+{
+    "version": "0.6.3",
+    "description": "Safety-first macOS + Windows cleaner: junk rules, space analysis, AI tool & skill cleanup, app updater.",
+    "homepage": "https://github.com/echoVic/cleanzo",
+    "license": "MIT",
+    "notes": "Only the official amd64 (x86_64) build is published. Launch via the Start Menu shortcut or the 'cleanzo' shim; cleaning system folders will ask for UAC confirmation.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/echoVic/cleanzo/releases/download/v0.6.3/cleanzo-0.6.3-windows-amd64.tar.gz",
+            "hash": "69ce1a5be1bf083e1455e2b0d9beb43a304fca3db5e83ecd9ad32ac4a002e37b"
+        }
+    },
+    "bin": [
+        [
+            "Cleanzo.exe",
+            "cleanzo"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Cleanzo.exe",
+            "Cleanzo"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/echoVic/cleanzo"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/echoVic/cleanzo/releases/download/v$version/cleanzo-$version-windows-amd64.tar.gz"
+            }
+        }
+    }
+}
